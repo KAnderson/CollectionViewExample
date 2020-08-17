@@ -94,5 +94,14 @@
       <Name>CollectionViewExample</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+      <AndroidResource Include="Resources\drawable-xxxhdpi\calendar.png"/>
+      <AndroidResource Include="Resources\drawable-xxhdpi\calendar.png"/>
+      <AndroidResource Include="Resources\drawable-xhdpi\calendar.png"/>
+      <AndroidResource Include="Resources\drawable-hdpi\calendar.png"/>
+      <AndroidResource Include="Resources\drawable-mdpi\calendar.png"/>
+      <AndroidResource Include="Resources\drawable-ldpi\calendar.png"/>
+  </ItemGroup>
+
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

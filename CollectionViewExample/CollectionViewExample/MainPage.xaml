@@ -11,7 +11,7 @@
         <CollectionView.ItemTemplate>
             <DataTemplate>
 
-                <Grid RowDefinitions="Auto,*" WidthRequest="200">
+                <Grid RowDefinitions="Auto,*,*" WidthRequest="200">
                     <!--  Style="{StaticResource HeadingS}"  -->
                     <Label
                         Margin="10"
@@ -23,6 +23,7 @@
                         Margin="10,0,0,0"
                         Text="{Binding Content}"
                         TextColor="{StaticResource colorBlackBackground36}" />
+                    <Image Source="calendar.png" />
                 </Grid>
 
             </DataTemplate>

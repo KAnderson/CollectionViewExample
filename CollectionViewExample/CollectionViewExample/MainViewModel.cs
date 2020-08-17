@@ -2,12 +2,6 @@
 
 namespace CollectionViewExample
 {
-    public class AdviceCard
-    {
-        public string Title { get; set; }
-        public string Content { get; set; }
-    }
-
     public class MainViewModel
     {
         public ObservableCollection<AdviceCard> AdviceCards { get; set; }
