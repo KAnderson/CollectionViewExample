@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="CollectionViewExample.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Application.Resources>
+        <Color x:Key="colorBlackBackground">#1E1E1E</Color>
+        <Color x:Key="colorBlackBackground36">#363636</Color>
+
+        <OnPlatform x:Key="BoldFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto" />
+            <On Platform="iOS" Value="Roboto-Bold" />
+        </OnPlatform>
+        <OnPlatform x:Key="RegularFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="Roboto-Regular.ttf#Open Sans" />
+            <On Platform="iOS" Value="Roboto-Regular" />
+        </OnPlatform>
+        <Style x:Key="HeadingS" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldFont}" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="TextColor" Value="{StaticResource colorBlackBackground}" />
+        </Style>
+        <Style x:Key="SmallText" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="TextColor" Value="{StaticResource colorBlackBackground}" />
+        </Style>
+
+    </Application.Resources>
+</Application>
